@@ -402,7 +402,7 @@ async function analyzeIngredientsWithAI(foodName, ingredients) {
     Keep the response very short, maximum 2 bullet points.
   `;
 
-  const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
+  const apiUrl = `/.netlify/functions/gemini`;
   
   try {
     const verdictBox = document.getElementById("ai-verdict-box");
@@ -491,7 +491,7 @@ async function analyzeImageWithAI(foodName, base64String, mimeType) {
     Keep the response very short, maximum 3 bullet points.
   `;
 
-  const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
+  const apiUrl = `/.netlify/functions/gemini`;
   
   try {
     const verdictBox = document.getElementById("ai-verdict-box");
